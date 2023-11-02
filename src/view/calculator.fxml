@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="299.0" style="-fx-background-color: #1E8449;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculatorController">
+   <children>
+      <TextField fx:id="displayTxt" editable="false" layoutX="24.0" layoutY="21.0" prefHeight="94.0" prefWidth="258.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button layoutX="162.0" layoutY="128.0" mnemonicParsing="false" onAction="#miltiplicationOperation" prefHeight="53.0" prefWidth="57.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="93.0" layoutY="128.0" mnemonicParsing="false" onAction="#divideOperation" prefHeight="53.0" prefWidth="57.0" text="/">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="128.0" mnemonicParsing="false" onAction="#clearTxtField" prefHeight="53.0" prefWidth="57.0" text="C">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="227.0" layoutY="128.0" mnemonicParsing="false" onAction="#calculate" prefHeight="53.0" prefWidth="57.0" style="-fx-background-color: #F4D03F;" text="=">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="227.0" layoutY="256.0" mnemonicParsing="false" onAction="#addOperation" prefHeight="53.0" prefWidth="57.0" text="+">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="228.0" layoutY="193.0" mnemonicParsing="false" onAction="#minusOperation" prefHeight="53.0" prefWidth="57.0" text="-">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="162.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#button9Clicked" prefHeight="53.0" prefWidth="57.0" text="9">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="224.0" layoutY="387.0" prefHeight="42.0" prefWidth="64.0" text="byDanniels" textFill="#eeeeee">
+         <font>
+            <Font name="Gill Sans MT Ext Condensed Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="93.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#button8Clicked" prefHeight="53.0" prefWidth="57.0" text="8">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#button7Clicked" prefHeight="53.0" prefWidth="57.0" text="7">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="162.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#button6Clicked" prefHeight="53.0" prefWidth="57.0" text="6">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="93.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#button5Clicked" prefHeight="53.0" prefWidth="57.0" text="5">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#button4Clicked" prefHeight="53.0" prefWidth="57.0" text="4">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="162.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#button3Clicked" prefHeight="53.0" prefWidth="57.0" text="3">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="93.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#button2Clicked" prefHeight="53.0" prefWidth="57.0" text="2">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#button1Clicked" prefHeight="53.0" prefWidth="57.0" text="1">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="227.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#button0Clicked" prefHeight="53.0" prefWidth="57.0" text="0">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font>
+      </Button>
+      <Text fx:id="savedNumbers" fill="#c3bbbb" layoutX="33.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
